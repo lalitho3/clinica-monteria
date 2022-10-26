@@ -1,0 +1,99 @@
+---
+import MainLayout from "../layout/MainLayout.astro";
+---
+
+<MainLayout titulo="Clínica | Sobre nosotros">
+    <div class="nosotros-banner">
+		<h2>Sobre nosotros</h2>
+        <p>Conoce mas acerca de la Clínica Montería</p>
+	</div>
+
+    <div class="nosotros">
+        <div class="nosotros__texto">
+            <h3>¿Quiénes somos?</h3>
+            <p>La Clínica Montería es una institución de salud privada, que brinda servicios de salud integral, con un equipo de profesionales altamente calificados, comprometidos con la calidad y la excelencia en la atención de nuestros pacientes.</p>
+            <p>Contamos con un equipo de profesionales altamente calificados, comprometidos con la calidad y la excelencia en la atención de nuestros pacientes.</p>
+            <p>La Clínica Montería es una institución de salud privada, que brinda servicios de salud integral, con un equipo de profesionales altamente calificados, comprometidos con la calidad y la excelencia en la atención de nuestros pacientes.</p>
+        </div>
+        <div class="nosotros__imagen">
+            <img src="/nosotros1.svg" alt="Imagen de la clínica">
+        </div>
+    </div>
+
+    <div class="nosotros">
+        <div class="nosotros__imagen">
+            <img src="/nosotros2.svg" alt="Imagen de la clínica">
+        </div>
+        <div class="nosotros__texto">
+            <h3>Nuestra visión</h3>
+            <p>La Clínica Montería es una institución de salud privada, que brinda servicios de salud integral, con un equipo de profesionales altamente calificados, comprometidos con la calidad y la excelencia en la atención de nuestros pacientes.</p>
+            <p>Contamos con un equipo de profesionales altamente calificados, comprometidos con la calidad y la excelencia en la atención de nuestros pacientes.</p>
+            <p>La Clínica Montería es una institución de salud privada, que brinda servicios de salud integral, con un equipo de profesionales altamente calificados, comprometidos con la calidad y la excelencia en la atención de nuestros pacientes.</p>
+        </div>
+    </div>
+</MainLayout>
+
+<style>
+
+.nosotros-banner {
+	background-color: #22c55e;
+	text-align: center;
+	padding: 1rem;
+	overflow-x: hidden;
+}
+
+.nosotros-banner h2 {
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.nosotros-banner p {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nosotros__texto {
+    width: 50%;
+}
+
+.nosotros__texto h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #22c55e;
+}
+
+.nosotros__imagen {
+    width: 40%;
+}
+
+.nosotros__texto p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .nosotros {
+        flex-direction: column;
+    }
+
+    .nosotros__texto {
+        width: 100%;
+    }
+
+    .nosotros__imagen {
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
+
+</style>

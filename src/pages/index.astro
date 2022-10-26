@@ -1,0 +1,90 @@
+---
+import MainLayout from "../layout/MainLayout.astro";
+---
+
+<MainLayout titulo="Clínica | Inicio">
+	  <div class="heroe">
+		<div class="info">
+			<h1>Obtén hasta un <span>50%</span> de descuento</h1>
+			<p>Aprovecha nuestros descuentos en consultas rutinarias, registrate y obten tu cupón. (Oferta limitada a 250 cupones) <strong>¡No te lo pierdas!</strong> <br>
+				<span>Válido hasta el 31 de Diciembre del 2022</span>
+			</p>
+			<div class="buttons">
+				<a href="/registro" class="btn-principal">Registrarse</a>
+				<a href="/contacto" class="btn-secundario">Contáctanos</a>
+			</div>
+		</div>
+		<img src="/heroe.svg" alt="Imagen Heroe" width="500">
+	  </div>
+</MainLayout>
+
+<style>
+
+.heroe {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	gap: 5rem;
+	padding: 1rem;
+}
+
+.heroe .info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.heroe .info h1 {
+	font-size: 3rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+.heroe .info h1 span {
+	color: #22c55e;
+}
+
+.heroe .info p span {
+	color: #22c55e;
+}
+
+.heroe .info p {
+	font-size: 1.3rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+.heroe .info .buttons {
+	display: flex;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.heroe .btn-principal {
+	background-color: #22c55e;
+	text-decoration: none;
+	color: #fff;
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+.heroe .btn-secundario {
+	background-color: #fff;
+	text-decoration: none;
+	color: #22c55e;
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	font-weight: 700;
+	border: 1px solid #22c55e;
+}
+
+@media (max-width: 768px) {
+	.heroe img {
+		display: none;
+	}
+}
+
+</style>

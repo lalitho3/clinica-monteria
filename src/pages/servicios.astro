@@ -1,0 +1,51 @@
+---
+import MainLayout from "../layout/MainLayout.astro";
+import Card from "../components/Card.astro";
+---
+
+<MainLayout titulo="Clínica | Servicios">
+    <div class="servicios-banner">
+		<h2>Nuestros servicios</h2>
+        <p>Consulta nuestros servicios a un costo accesible y con la seguridad de ser atendido por profesionales</p>
+	  </div>
+
+	  <div class="servicios">
+		<Card servicio="Rayos X" />
+		<Card servicio="Laboratorio" />
+        <Card servicio="Covid 19" />
+        <Card servicio="Ecografía" />
+		<Card servicio="Vacunas" />
+        <Card servicio="Chequeos" />
+        <Card servicio="Consulta" />
+        <Card servicio="Emergencias" />
+	  </div>
+</MainLayout>
+
+<style>
+
+.servicios-banner {
+	background-color: #22c55e;
+	text-align: center;
+	padding: 1rem;
+	overflow-x: hidden;
+}
+
+.servicios-banner h2 {
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.servicios-banner p {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.servicios {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 1rem;
+	padding: 1rem;
+}
+</style>

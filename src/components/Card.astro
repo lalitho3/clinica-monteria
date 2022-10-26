@@ -1,0 +1,57 @@
+---
+const {
+    servicio = "Servicio designado"
+} = Astro.props
+---
+
+<div class="card">
+    <img src="/8bit-heart.png" alt="8 bit Heart" width="70">
+    <div class="informacion">
+        <h3>{servicio}</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt venenatis risus, sit amet tempor lectus. In vel tincidunt magna. Nunc lobortis magna ex, id consequat ex semper et.</p>
+        <strong>Desde $199.00 MXN</strong>
+    </div>
+</div>
+
+<style>
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: justify;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all .3s ease;
+}
+
+.card:hover {
+    background-color: #22c55e;
+    color: #fff;
+}
+
+.informacion {
+    margin-left: 1rem;
+}
+
+.informacion h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.informacion p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.informacion strong {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+</style>

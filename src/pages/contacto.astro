@@ -1,0 +1,99 @@
+---
+import MainLayout from "../layout/MainLayout.astro";
+---
+
+<MainLayout titulo="Clínica | Contacto">
+    <div class="contacto-banner">
+		<h2>Contáctanos</h2>
+        <p>¿Tienes alguna duda o comentario acerca de nuestros servicios? <strong>No dudes en contactarnos</strong></p>
+	</div>
+
+    <div class="formulario">
+        <form method="POST">
+            <div class="grupo">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+            </div>
+            <div class="grupo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Escribe tu email">
+            </div>
+            <div class="grupo">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <input type="submit" value="Enviar formulario">
+        </form>
+    </div>
+</MainLayout>
+
+<style>
+
+.contacto-banner {
+	background-color: #22c55e;
+	text-align: center;
+	padding: 1rem;
+	overflow-x: hidden;
+}
+
+.contacto-banner h2 {
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.contacto-banner p {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario form .grupo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.formulario form .grupo label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.formulario form .grupo input {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario form .grupo textarea {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario form input[type="submit"] {
+    background-color: #22c55e;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+</style>
